@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="reg-page">
+      <h1>Registration Form</h1>
+      <form>
+        <h3 class="top">Personal Info</h3>
+        <div id="name">
+          <label><strong>First name</strong></label>
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First name"
+            required
+          />
+
+          <label><strong>Last name</strong></label>
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last name"
+            required
+          />
+
+          <label><strong>Phone number</strong></label>
+          <input
+            type="number"
+            name="phone_number"
+            placeholder="Phone number"
+            required
+          />
+
+          <label><strong>Password</strong></label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <label><strong>Confirm Password</strong></label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Confirm password"
+            required
+          />
+        </div>
+
+        <section>
+          <p class="dob"><strong>Date of Birth</strong></p>
+          <input class="date" type="Date" name="date_picker" required />
+
+          <div class="gender">
+            <p class="student"><strong>Gender :</strong></p>
+            <label class="radio"
+              >Male
+              <input class="radio-button" type="radio" name="gender" />
+            </label>
+            <label class="radio"
+              >Female
+              <input
+                class="radio-button"
+                id="radio-button"
+                type="radio"
+                name="gender"
+              />
+            </label>
+          </div>
+        </section>
+
+        <section class="color-picker">
+          <p class="student-color"><strong>Favorite Color :</strong></p>
+          <input class="color" type="color" name="color_picker" required />
+        </section>
+
+        <button type="submit">
+          <a class="butn" href="success.html">Register</a>
+        </button>
+      </form>
+
+      <p>
+        By clicking the Registration Button you agreed to our terms and
+        condition
+        <a href="#">Terms & Condition</a>
+      </p>
+      <p></p>
+      <p class="log">
+        Already have an account?
+        <a href="./login.html">Login</a>
+      </p>
+    </div>
+  </body>
+</html>
+
+<!--Create the following pages using HTML CSS
+
+Registration page
+Login page
+Success register page
+Your section of the registration page should include
+(First name, 
+Last name,
+Phone number,
+Email,
+Gender (select field),
+Date of birth (date selection option),
+Favorite color (color selector).)
+
+Your section of the login page should include
+(Email and
+password.)
+
+If the user uses the correct format for email and password, the user should be navigated to the success page.-->
